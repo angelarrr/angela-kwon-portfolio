@@ -1,0 +1,112 @@
+body {
+  /* Typography Declarations */
+  color: #222222;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Nue", sans-serif;
+}
+
+.masthead-intro, .masthead-heading, .content-footer {
+  text-align: center;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-image: url('http://i.imgur.com/apUIO2W.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em #25283E;
+  border-radius: 10px;
+}
+
+.masthead-intro {
+  /* Layout Declarations */
+  margin-bottom: 0.1em;
+  /* Typography Declarations */
+  font-family: "Gentium Book Basic", "Georgia", serif;
+  font-size: 2em;
+}
+
+.masthead-heading {
+  /* Layout Declarations */
+  margin-top: -0.2em;
+  /* Typography Declarations */
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 6em;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #D98970;
+  text-shadow: 3px 3px 5px #25283E;
+}
+
+.introduction-section, .location-section, .questions-section {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+.content-footer > p {
+  color: #25283E;
+}
+
+.content-footer {
+  background-color: #D9A270;
+  margin-top: 2em;
+  padding: 3em 0;
+  border-radius: 10px;
+}
+
+.social {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social > li {
+  display: inline-block;
+}
+
+.introduction-section > p, .location-section > p, .questions-section > p, .content-footer > p {
+  /* Typography Declarations */
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.questions-section > h2 {
+  /* Typography Declarations */
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.2 em;
+  font-weight: bold;
+  color: #D9A270;
+  /* Layout */
+  margin: 1em 0 1em 0;
+}
+
+section > h1 {
+  margin-top: 2em;
+  font-size: 2em;
+}
+
+.content-footer > a {
+  font-size: 1em;
+}
+
+a {
+  color: #504B71;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #25283E;
+}
+
+@media only screen and (max-width: 500px) {
+  .masthead {
+    padding: 3em 0;
+  }
+  .masthead-heading {
+    font-size: 3em;
+  }
+  .content-footer {
+    padding: 3em 0;
+  }
