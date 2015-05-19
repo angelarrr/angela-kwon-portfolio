@@ -5,6 +5,15 @@ body {
   font-family: "Open Sans", "Helvetica Nue", sans-serif;
 }
 
+a {
+  color: #504B71;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #25283E;
+}
+
 .masthead-intro, .masthead-heading, .content-footer {
   text-align: center;
 }
@@ -39,11 +48,21 @@ body {
   text-shadow: 3px 3px 5px #25283E;
 }
 
-.introduction-section, .location-section, .questions-section {
+.introduction-section, .location-section, .questions-section, .projects-section {
   max-width: 38em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
+}
+
+.screenshots {
+  text-align: center;
+}
+
+.screenshots > li {
+  margin: 1em 0;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
 }
 
 .content-footer > p {
@@ -57,7 +76,7 @@ body {
   border-radius: 10px;
 }
 
-.social {
+.social, .screenshots {
   list-style: none;
   padding-left: 0;
 }
@@ -91,15 +110,6 @@ section > h1 {
   font-size: 1em;
 }
 
-a {
-  color: #504B71;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #25283E;
-}
-
 @media only screen and (max-width: 500px) {
   .masthead {
     padding: 3em 0;
@@ -107,6 +117,4 @@ a:hover {
   .masthead-heading {
     font-size: 3em;
   }
-  .content-footer {
-    padding: 3em 0;
-  }
+}
