@@ -71,6 +71,13 @@ a:hover {
   color: #403F3D;
 }
 
+h1 {
+  font-size: 2em;
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  color: #DA8672;
+}
+
 /* navigation section */
 .top-nav {
   width: 100%;
@@ -104,7 +111,7 @@ a:hover {
 
 /* header section */
 .masthead {
-  background-image: url('../images/background.jpeg'); /* unsplash.com */
+  background-image: url('http://i.imgur.com/o8BBjsK.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 30em;
@@ -124,18 +131,25 @@ a:hover {
 }
 
 /* about me section */
-.introduction-section, .portfolio-section {
-  text-align: justify;
-  max-width: 38em;
+.introduction-section, .portfolio-section, .contact-section {
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1em;
   padding-top: 3em;
+  padding-bottom: 3em;
+  border-top: solid 1px #F2F2F1;
+}
+
+.content {
+  text-align: center;
+  max-width: 38em;
+  margin: 1em auto;
 }
 
 .intro-text {
   margin-top: 1em;
   line-height: 2em;
+  text-align: justify;
 }
 
 #myface {
@@ -153,42 +167,78 @@ a:hover {
   text-transform: uppercase;
 }
 
+/* portfolio section */
+.portfolio-section {
+  background-color: #F2F2F1;
+}
+
 .screenshots {
+  /* border: solid 1px blue; */
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-list {
+  list-style: none;
+  vertical-align: center;
   text-align: center;
+  margin-top: 1em;
 }
 
-.screenshots > li {
-  margin: 1em 0;
-  border: 1px solid #D9D9D9;
-  border-radius: 3px;
+.project-list li {
+  display: inline;
 }
 
-.content-footer > p {
-  color: #25283E;
+.project-list li img {
+  max-width: 400px;
+  max-height: 207px;
+  padding: 1em;
 }
 
-.content-footer {
-  background-color: #E0F59C;
-  margin-top: 2em;
-  padding: 3em 0;
-}
-
-.social, .screenshots {
+/* contact section*/
+#icons {
   list-style: none;
   padding-left: 0;
-}
-
-.social > li {
-  display: inline-block;
-}
-
-section > h1 {
-  font-size: 2em;
-  font-family: "Amatic SC", cursive;
   text-align: center;
-  color: #DA8672;
+  margin-top: 1em;
+  font-size: 2em;
 }
 
-.content-footer > a {
+#icons > li {
+  display: inline-block;
+  padding: 0.2em;
+}
+
+#email a {
+  color: red;
+}
+
+#skype a {
+  color: #12A5F4;
+}
+
+#linkedin a {
+  color: #007bb6;
+}
+
+#github a {
+  color: black;
+}
+
+#github a:hover, #email a:hover, #skype a:hover, #linkedin a:hover {
+  opacity: 0.5;
+}
+
+.contact-text {
+  margin-top: 1em;
+}
+
+/* footer */
+.content-footer {
+  height: 2em;
+  background-color: #87A65B;
   font-size: 1em;
+  padding-top: 1em;
+  text-align: center;
 }
