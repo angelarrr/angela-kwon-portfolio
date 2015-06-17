@@ -3,38 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Gentium+Book+Basic' rel='stylesheet' type='text/css'>
+	<link rel"stylesheet" href="css/normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Amatic+SC' rel='stylesheet' type='text/css'>
 	<title>Angela Kwon</title>
 </head>
 <body>
-	
-	<header class="masthead">
-  		<p class="masthead-intro">Hi, I'm</p>
-  		<h1 class="masthead-heading">Angela</h1>
+
+	<!-- Navigation section -->
+	<nav class="top-nav">
+			<span id="nav-text"><a href="#home">hi, i'm angela</a></span>
+			<ul class="links">
+				<li><a href="#me">about me</a></li>
+				<li><a href="#portfolio">portfolio</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+	</nav>
+
+	<!-- Header section -->
+	<header class="masthead" id="home">
+  		<div class="masthead-intro">
+  			<span id="masthead-text">i will code for food</p>
+  		</div>
 	</header>
 
-	<section class="introduction-section">
- 		<h1>Introduction</h1>
-  			<p>I am currently a frontend web developer taking courses with Thinkful. I originally planned on applying to law school after graduation but 5 years later I ended up as a functional consultant for a IT software implementation company with a HR and payroll background. I decided to quit my job and focus full-time on learning the skills to become a web developer.</p>
-  			<p>I hope that I am never complacent where I am. I want to take risks and step out of my comfort zone. Life is so much more exiting that way!</p>
+	<!-- About me -->
+	<section class="introduction-section" id="me">
+ 		<h1>about me</h1>
+ 			<div class="mypic">
+ 				<img src="images/profile.jpg" id="myface">
+ 			</div>
+  			<p class="intro-text">I am a political Science/Economics graduate that worked as a legal assistant, HR generalist, and functional consultant for an IT software implementation company before deciding that I wanted to become a <span id="fewd">Front End Developer</span>. In May 2015, I became a student at <a href="https://www.thinkful.com" target="blank">Thinkful</a> and began learning HTML5, CSS, JavaScript, jQuery, and AJAX. Currently I reside in NJ with my Australian Shepherd. I love to eat, travel, hike, read, and avoid the gym as much as possible.</p>
 	</section>
 
-	<section class="location-section">
- 		<h1>Where I'm from</h1>
-  		<p>I was born in New York City and raised in northern New Jersey.</p>
-	</section>
-
-	<section class="questions-section">
-		<h1>More About Me</h1>
- 		<h2>What are your favorite hobbies?</h2>
-			<p>I live to travel and eat. I love hiking and reading. I love that feeling of accomplishment when I reach that awesome viewpoint on the mountain or when I finish a book.</p>
-  		<h2>What's your dream job?</h2>
-  			<p>A job that doesn't feel like a job. I want to be doing something that I love where I will constantly be learning. I would also love a job that would allow me to travel as frequently as I want.</p>
-		<h2>What music have you been listening to lately?</h2>
-  			<p>I've been listening to BØRNS lately.</p>
-	</section>
-
-	<section class="projects-section">
+	<section class="portfolio-section" id="portfolio">
 		<h1>Projects</h1>
 		<ul class="screenshots">
 			<li><img src="images/NYT Hack.png" alt="Hack the Times" width="100%"></li>
