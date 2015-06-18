@@ -8,5 +8,4 @@ $(document).ready(function(){
 	}, function() {
 		$(this).attr('src', 'http://i.imgur.com/zy8YrAs.jpg');
 	});
-
 });
