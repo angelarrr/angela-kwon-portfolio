@@ -78,6 +78,13 @@ h1 {
   color: #DA8672;
 }
 
+h3 {
+  font-size: 1.5em;
+  font-family: "Josefin Sans", "Helvetica Nue", sans-serif;
+  text-align: center;
+  color: white;
+}
+
 /* navigation section */
 .top-nav {
   width: 100%;
@@ -172,28 +179,73 @@ h1 {
   background-color: #F2F2F1;
 }
 
-.screenshots {
-  /* border: solid 1px blue; */
-  max-width: 75%;
+.projects {
   margin-left: auto;
   margin-right: auto;
-}
-
-.project-list {
-  list-style: none;
-  vertical-align: center;
-  text-align: center;
-  margin-top: 1em;
-}
-
-.project-list li {
-  display: inline;
-}
-
-.project-list li img {
-  max-width: 400px;
-  max-height: 207px;
+  display: block;
+  position: relative;
   padding: 1em;
+  width: 75%;
+  overflow: auto;
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projects li {
+  position: relative;
+  width: 45%;
+  clear: both;
+  display: inline-block;
+  margin: 1em;
+}
+
+.projects li img {
+  display: block;
+  width: 100%;
+}
+
+.projects .project-image {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.excerpt {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  display: none;
+  padding: 3em;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  line-height:3em;
+  background: rgba(0, 0, 0, .85);
+}
+
+.excerpt a {
+  font-size: 2em;
+  padding: 0.5em;
+}
+
+.projects li.left {
+  float: left;
+  clear: both;
+}
+
+.projects li.right {
+  float: right;
+  clear: none;
+}
+
+li.project:hover .excerpt {
+  display: block;
+  top: 0;
 }
 
 /* contact section*/
@@ -241,4 +293,13 @@ h1 {
   font-size: 1em;
   padding-top: 1em;
   text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .masthead {
+    padding: 3em 0;
+}
+
+img {
+  max-width: 100%;
 }

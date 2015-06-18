@@ -3,10 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel"stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Amatic+SC' rel='stylesheet' type='text/css'>
 	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<title>Angela Kwon</title>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="js/app.js"></script>
+	<title>hello, i'm ang!</title>
 </head>
 <body>
 
@@ -31,21 +34,61 @@
 	<section class="introduction-section" id="me">
 		<div class="content">
  			<h1>about me</h1>
- 				<div class="mypic">
- 				<img src="http://i.imgur.com/zy8YrAs.jpg" id="myface" alt="My face">
- 				</div>
-  			<p class="intro-text">I am a political Science/Economics graduate that worked as a legal assistant, HR generalist, and functional consultant for an IT software implementation company before deciding that I wanted to become a <span id="fewd">Front End Developer</span>. In May 2015, I became a student at <a href="https://www.thinkful.com" target="blank">Thinkful</a> and began learning HTML5, CSS, JavaScript, jQuery, and AJAX. Currently I reside in NJ with my Australian Shepherd. I love to eat, travel, hike, read, and avoid the gym as much as possible.</p>
+ 			<div class="mypic">
+ 				<img src="http://i.imgur.com/zy8YrAs.jpg" id="myface" alt="My face" class="profile">
+ 			</div>
+  			<p class="intro-text">I am a Political Science/Economics graduate that worked as a legal assistant, HR generalist, and functional consultant before deciding that I wanted to become a <span id="fewd">Front End Developer</span>. In May 2015, I became a student at <a href="https://www.thinkful.com" target="blank">Thinkful</a> and began learning HTML5, CSS, JavaScript, jQuery, and AJAX. Currently, I reside in NJ with my Australian Shepherd. I love to eat, travel, hike, read, and avoid the gym as much as possible.</p>
   		</div>
 	</section>
 
 	<!-- Portfolio -->
 	<section class="portfolio-section" id="portfolio">
-		<div class="screenshots">
+		<div class="projects">
 			<h1>portfolio</h1>
-			<ul class="project-list">
-				<li><img src="images/hotorcold.png" alt="Hot or Cold"></li>
-				<li><img src="images/shoppinglist.png" alt="Shopping List"></li>
-				<li><img src="images/starwarsquiz.png" alt="Quiz App"></li>
+			<ul>
+				<li class="project left">
+					<div class="project-image">
+						<img src="images/streetfighter.png" alt="Streetfighter" class="portfolio-pic">
+					</div>
+					<div class="excerpt">
+						<h3>Streetfighter [jQuery]</h3>
+						<a href="https://github.com/angelarrr/jquery-streetfighter/tree/gh-pages" target="_blank"><i class="fa fa-code"></i></a>
+						<a href="http://angelarrr.github.io/jquery-streetfighter/main.html" target="_blank"><i class="fa fa-external-link"></i></a>
+					</div>
+				</li>
+
+				<li class="project right">
+					<div class="project-image">
+						<img src="images/shoppinglist.png" alt="Shopping List" class="portfolio-pic">
+					</div>
+					<div class="excerpt">
+						<h3>Shopping List App</h3>
+						<a href="https://github.com/angelarrr/shopping-list/tree/gh-pages" target="_blank"><i class="fa fa-code"></i></a>
+						<a href="http://angelarrr.github.io/shopping-list/" target="_blank"><i class="fa fa-external-link"></i></a>
+					</div>
+				</li>
+
+				<li class="project left">
+					<div class="project-image">
+						<img src="images/hotorcold.png" alt="Hot or Cold" class="portfolio-pic">
+					</div>
+					<div class="excerpt">
+						<h3>Hot or Cold App</h3>
+						<a href="https://github.com/angelarrr/hot-or-cold-starter/tree/gh-pages" target="_blank"><i class="fa fa-code"></i></a>
+						<a href="http://angelarrr.github.io/hot-or-cold-starter/" target="_blank"><i class="fa fa-external-link"></i></a>
+					</div>
+				</li>
+
+				<li class="project right">
+					<div class="project-image">
+						<img src="images/starwarsquiz.png" alt="Quiz App" class="portfolio-pic">
+					</div>
+					<div class="excerpt">
+						<h3>Quiz App</h3>
+						<a href="https://github.com/angelarrr/star-wars-quiz/tree/gh-pages" target="_blank"><i class="fa fa-code"></i></a>
+						<a href="http://angelarrr.github.io/star-wars-quiz/" target="_blank"><i class="fa fa-external-link"></i></a>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</section>
@@ -54,7 +97,7 @@
 	<section class="contact-section" id="contact">
 		<div class="content">
 			<h1>contact</h1>
-			<p class="contact-text">feel free use any of the below social media to say hello!</p>
+			<p class="contact-text">feel free to use any of the below social media to say hello!</p>
 			<ul id="icons">
 				<li id="email">
 					<a href="mailto:kwon.angela@gmail.com"><i class="fa fa-envelope-square"></i></a>
